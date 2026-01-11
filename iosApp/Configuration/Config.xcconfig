@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=Traekotlinmultiplatform20260111
+PRODUCT_BUNDLE_IDENTIFIER=com.example.traekotlinmultiplatform20260111.Traekotlinmultiplatform20260111$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
