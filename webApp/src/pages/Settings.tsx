@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Card } from '../components/Card';
 
 export function Settings() {
-  const [spaceId, setSpaceId] = useState('2gk8lkqqmfmn');
-  const [accessToken, setAccessToken] = useState('LGPePocQZX9WMGbMbPLGZxxM1U1JhWNFM-szsO7VIGk');
-  const [managementToken, setManagementToken] = useState('●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●');
+  const [spaceId, setSpaceId] = useState('');
+  const [accessToken, setAccessToken] = useState('');
+  const [managementToken, setManagementToken] = useState('');
 
   const handleCopy = (text: string) => {
     navigator.clipboard.writeText(text);

@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.traekotlinmultiplatform20260111.data.ContentfulConfig
 import com.example.traekotlinmultiplatform20260111.ui.AppSecondary
 import com.example.traekotlinmultiplatform20260111.ui.TextPrimary
 import com.example.traekotlinmultiplatform20260111.ui.TextSecondary
@@ -28,9 +29,9 @@ import com.example.traekotlinmultiplatform20260111.ui.components.AppCard
 
 @Composable
 fun SettingsScreen() {
-    var spaceId by remember { mutableStateOf("") }
-    var accessToken by remember { mutableStateOf("") }
-    var managementToken by remember { mutableStateOf("") }
+    var spaceId by remember { mutableStateOf(ContentfulConfig.spaceId) }
+    var accessToken by remember { mutableStateOf(ContentfulConfig.accessToken) }
+    var managementToken by remember { mutableStateOf(ContentfulConfig.managementToken) }
 
     Column(
         modifier = Modifier
@@ -73,7 +74,11 @@ fun SettingsScreen() {
                 Spacer(modifier = Modifier.height(16.dp))
                 
                 Button(
-                    onClick = { /* Save action */ },
+                    onClick = {
+                        ContentfulConfig.spaceId = spaceId.trim()
+                        ContentfulConfig.accessToken = accessToken.trim()
+                        ContentfulConfig.managementToken = managementToken.trim()
+                    },
                     colors = ButtonDefaults.buttonColors(containerColor = AppSecondary),
                     modifier = Modifier.fillMaxWidth()
                 ) {
