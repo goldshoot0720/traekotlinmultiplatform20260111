@@ -62,7 +62,14 @@ val songs = listOf(
     SongItem("evo_jp", "鋒兄進化Show (日語)", "song_evolution_jp.mp3", "lyrics_evolution_jp.txt"),
     SongItem("evo_yue", "鋒兄進化Show (粵語)", "song_evolution_yue.mp3", "lyrics_evolution_yue.txt"),
     SongItem("evo_en", "鋒兄進化Show (英語)", "song_evolution_en.mp3", "lyrics_evolution_en.txt"),
-    SongItem("evo_kr", "鋒兄進化Show (韓語)", "song_evolution_kr.mp3", "lyrics_evolution_kr.txt")
+    SongItem("evo_kr", "鋒兄進化Show (韓語)", "song_evolution_kr.mp3", "lyrics_evolution_kr.txt"),
+
+    // Feng's Legendary Life
+    SongItem("legend_zh", "鋒兄的傳奇人生 (中文)", "song_legend_zh.mp3", "lyrics_legend_zh.txt"),
+    SongItem("legend_jp", "鋒兄的傳奇人生 (日語)", "song_legend_jp.mp3", "lyrics_legend_jp.txt"),
+    SongItem("legend_yue", "鋒兄的傳奇人生 (粵語)", "song_legend_yue.mp3", "lyrics_legend_yue.txt"),
+    SongItem("legend_en", "鋒兄的傳奇人生 (英語)", "song_legend_en.mp3", "lyrics_legend_en.txt"),
+    SongItem("legend_kr", "鋒兄的傳奇人生 (韓語)", "song_legend_kr.mp3", "lyrics_legend_kr.txt")
 )
 
 @OptIn(ExperimentalResourceApi::class)
